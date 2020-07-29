@@ -2,20 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
+import PostItem from "../components/PostItem"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <ul>
-      <li>
-        <Link to="/" activeStyle={{ color: 'red' }}>Home</Link>
-      </li>
-      <li>
-        <Link to="/project">Project</Link>
-      </li>
-    </ul>
+    <PostItem 
+      slug="/about/"
+      category="Misc"
+      date="29 Aug 2020"
+      timeToRead="5"
+      title="Test title"
+      description="Test description"/>
   </Layout>
 )
 
