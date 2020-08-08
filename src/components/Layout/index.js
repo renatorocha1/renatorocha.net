@@ -7,13 +7,12 @@ import Sidebar from "./../Sidebar"
 import MenuBar from "./../Menubar"
 
 const Layout = ({ children }) => {
-
   return (
     <S.LayoutWrapper>
       <GlobalStyled />
       <Sidebar />
       <S.LayoutMain>{children}</S.LayoutMain>
-      <MenuBar/>
+      <MenuBar />
     </S.LayoutWrapper>
   )
 }
