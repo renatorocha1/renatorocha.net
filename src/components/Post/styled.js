@@ -96,7 +96,7 @@ export const MainContent = styled.section`
 
   blockquote {
     color: #fff;
-    border-left: 0.3rem solid #1fa1f2;
+    border-left: 0.3rem solid #e3c18a;
     padding: 0 1.875rem;
     margin: 3.125rem auto;
   }
@@ -168,8 +168,8 @@ export const MainContent = styled.section`
   }
 
   a {
-    border-bottom: 1px dashed #1fa1f2;
-    color: #1fa1f2;
+    border-bottom: 1px dashed #e3c18a;
+    color: #e3c18a;
     text-decoration: none;
     transition: opacity 0.5s;
     svg {
