@@ -3,17 +3,17 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const PostItemLink = styled(Link)`
-  color: #fff;
+  color: var(--postColor);
   display: flex;
   text-decoration: none;
   &:hover {
-    color: #E3C18A;
+    color: var(--highlight);
   }
 `
 
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid #414339;
+  border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
@@ -21,7 +21,8 @@ export const PostItemWrapper = styled.section`
 
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background ? props.background : '#E3C18A'};
+  background: ${props =>
+    props.background ? props.background : "var(--highlight)"};
   border-radius: 50%;
   color: #fff;
   display: flex;
@@ -41,7 +42,7 @@ export const PostItemInfo = styled.div`
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
-  color: #2B74FF
+  color: var(--highlight);
 `
 
 export const PostItemTitle = styled.h1`
@@ -51,7 +52,7 @@ export const PostItemTitle = styled.h1`
 `
 
 export const PostItemDescription = styled.p`
-  color: #a4a59f;
+  color: var(--texts);
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
