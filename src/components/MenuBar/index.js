@@ -4,17 +4,23 @@ import { Home } from "@styled-icons/heroicons-solid/Home"
 import { Search } from "@styled-icons/evaicons-solid/Search"
 import { LightDown } from "@styled-icons/entypo/LightDown"
 import { Grid } from "@styled-icons/entypo/Grid"
+import { List } from "@styled-icons/entypo/List"
 import { ArrowIosUpwardOutline as Arrow } from "@styled-icons/evaicons-outline/ArrowIosUpwardOutline"
 
 import * as S from "./styled"
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
+  const [display, setDisplay] = useState(null)
   const isDarkMode = theme === "dark"
+  const isListMode = display === "list"
 
   useEffect(() => {
     setTheme(window.__theme)
+    setDisplay(window.__display)
+
     window.__onThemeChange = () => setTheme(window.__theme)
+    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
   return (
@@ -42,8 +48,13 @@ const MenuBar = () => {
         >
           <LightDown />
         </S.MenuBarItem>
-        <S.MenuBarItem title="Change View">
-          <Grid />
+        <S.MenuBarItem
+          title="Change View"
+          onClick={() => {
+            window.__setPreferredDisplay(isListMode ? "grid" : "list")
+          }}
+        >
+          {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
         <S.MenuBarItem title="Go Top">
           <Arrow />
