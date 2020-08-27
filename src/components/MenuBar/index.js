@@ -7,6 +7,8 @@ import { Grid } from "@styled-icons/entypo/Grid"
 import { List } from "@styled-icons/entypo/List"
 import { ArrowIosUpwardOutline as Arrow } from "@styled-icons/evaicons-outline/ArrowIosUpwardOutline"
 
+import getThemeColor from "../../utils/get_theme_color"
+
 import * as S from "./styled"
 
 const MenuBar = () => {
@@ -26,12 +28,24 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink to="/" title="Go Home">
+        <S.MenuBarLink
+          paintDrip
+          hex={getThemeColor()}
+          duration={1}
+          to="/"
+          title="Go Home"
+        >
           <S.MenuBarItem>
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        <S.MenuBarLink to="/search" title="Search">
+        <S.MenuBarLink
+          paintDrip
+          hex={getThemeColor()}
+          duration={1}
+          to="/search"
+          title="Search"
+        >
           <S.MenuBarItem>
             <Search />
           </S.MenuBarItem>

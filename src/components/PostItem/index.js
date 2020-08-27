@@ -1,5 +1,6 @@
 import React from "react"
 import PropsType from "prop-types"
+import getThemeColor from "../../utils/get_theme_color"
 
 import * as S from "./styled"
 
@@ -12,7 +13,7 @@ const PostItem = ({
   title,
   description,
 }) => (
-  <S.PostItemLink to={slug}>
+  <S.PostItemLink paintDrip hex={getThemeColor()} duration={1} to={slug}>
     <S.PostItemWrapper>
       <S.PostItemTag background="#FECB2E">{category}</S.PostItemTag>
       <S.PostItemInfo>
