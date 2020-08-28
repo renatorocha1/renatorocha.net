@@ -2,7 +2,7 @@ backend:
   name: github
   repo: renatorocha1/renatorocha.net
   branch: master
-  site_domain: https://renatorocha.netlify.app/
+  site_domain: renatorocha.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: static/assets/images
@@ -17,6 +17,49 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "CSS",
+              "MySQL",
+              "Docker",
+              "Git",
+              "GraphQL",
+              "HTML",
+              "JavaScript",
+              "Node.js",
+              "React",
+              "React Native",
+              "Services",
+              "Vue.js",
+              "PHP",
+              "Misc",
+            ],
+        }
+      - {
+          label: "Background",
+          name: "background",
+          widget: "select",
+          options:
+            [
+              { label: "CSS", value: "#1985B3" },
+              { label: "MySQL", value: "#015A84" },
+              { label: "Docker", value: "#111B64" },
+              { label: "Git", value: "#EFEFF0" },
+              { label: "GraphQL", value: "#E1008F" },
+              { label: "HTML", value: "#FF5627" },
+              { label: "JavaScript", value: "#FFC400" },
+              { label: "Node.js", value: "#6CC24A" },
+              { label: "React", value: "#040DBF" },
+              { label: "Services", value: "#571845" },
+              { label: "Vue.js", value: "#42B983" },
+              { label: "PHP", value: "#7756BF" },
+              { label: "Misc", value: "#C80338" },
+            ],
+        }
       - {
           label: "Date",
           name: "date",
