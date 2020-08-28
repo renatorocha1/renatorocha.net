@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import SEO from "../components/seo"
-import RecommendedPost from "../components/RecommendedPost"
-import Comments from "../components/Comments"
-import * as S from "../components/Post/styled"
+import Layout from "./../components/Layout"
+import SEO from "./../components/seo"
+import RecommendedPost from "./../components/RecommendedPost"
+import Comments from "./../components/Comments"
+import * as S from "./../components/Post/styled"
 
 const BlogPost = ({ data, pageContext }) => {
   const next = pageContext.nextPost
@@ -14,7 +14,11 @@ const BlogPost = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      />
       <S.PostHeader>
         <S.PostDate>
           {post.frontmatter.date} • {post.timeToRead} min to read

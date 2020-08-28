@@ -7,7 +7,7 @@ import { Grid } from "@styled-icons/entypo/Grid"
 import { List } from "@styled-icons/entypo/List"
 import { ArrowIosUpwardOutline as Arrow } from "@styled-icons/evaicons-outline/ArrowIosUpwardOutline"
 
-import getThemeColor from "../../utils/get_theme_color"
+import getThemeColor from "./../../utils/get_theme_color"
 
 import * as S from "./styled"
 

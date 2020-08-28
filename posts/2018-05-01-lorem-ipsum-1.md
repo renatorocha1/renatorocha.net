@@ -4,6 +4,7 @@ title: Lorem Ipsum 1
 description: And I'm not sure about the universe.
 category: Misc
 background: "#7AAB13"
+image: "/assets/images/desert.jpg"
 ---
 
 # Lorem ipsum

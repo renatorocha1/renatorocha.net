@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import getThemeColor from "../../utils/get_theme_color"
+import getThemeColor from "./../../utils/get_theme_color"
 
 import * as S from "./styled"
 import Avatar from "./../Avatar"
