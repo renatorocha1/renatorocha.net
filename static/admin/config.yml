@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: renatorocha1/renatorocha.net
   branch: master
   site_domain: https://renatorocha.netlify.app/
