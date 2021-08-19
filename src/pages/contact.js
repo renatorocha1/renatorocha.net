@@ -4,11 +4,11 @@ import SEO from "./../components/seo"
 
 import * as S from "./../components/Post/styled"
 
-const PortfolioPage = () => (
+const ContactPage = () => (
   <Layout>
-    <SEO title="Portfolio" description="" />
+    <SEO title="Contact" description="" />
     <S.PostHeader>
-      <S.PostTitle>Portfolio</S.PostTitle>
+      <S.PostTitle>Contact</S.PostTitle>
     </S.PostHeader>
     <S.MainContent>
       <p>
@@ -18,4 +18,4 @@ const PortfolioPage = () => (
   </Layout>
 )
 
-export default PortfolioPage
+export default ContactPage
