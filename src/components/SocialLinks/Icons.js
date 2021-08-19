@@ -1,10 +1,10 @@
-import { StackOverflow } from "@styled-icons/boxicons-logos/StackOverflow"
+import { Behance } from "@styled-icons/boxicons-logos/Behance"
 import { Github } from "@styled-icons/boxicons-logos/Github"
 import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin"
 import { Instagram } from "@styled-icons/boxicons-logos/Instagram"
 
 const Icons = {
-  StackOverflow,
+  Behance,
   Github,
   Linkedin,
   Instagram

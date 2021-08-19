@@ -12,7 +12,7 @@ const ContactPage = () => (
     </S.PostHeader>
     <S.MainContent>
       <p>
-        Comming soon...
+        Coming soon...
       </p>
     </S.MainContent>
   </Layout>

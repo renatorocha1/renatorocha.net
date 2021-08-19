@@ -8,8 +8,8 @@ const links = [
     url: "https://www.linkedin.com/in/renatorocha1"
   },
   {
-    label: "StackOverflow",
-    url: "https://stackexchange.com/users/8227743/renato-rocha"
+    label: "Behance",
+    url: "https://www.behance.net/renatorocha3"
   },
   {
     label: "Instagram",
