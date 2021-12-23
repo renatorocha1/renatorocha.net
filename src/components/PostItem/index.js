@@ -6,7 +6,7 @@ import * as S from "./styled"
 
 const PostItem = ({
   slug,
-  background,
+  background = "#FECB2E",
   category,
   date,
   timeToRead,
@@ -15,7 +15,7 @@ const PostItem = ({
 }) => (
   <S.PostItemLink paintDrip hex={getThemeColor()} duration={1} to={slug}>
     <S.PostItemWrapper>
-      <S.PostItemTag background="#FECB2E">{category}</S.PostItemTag>
+      <S.PostItemTag background={background}>{category}</S.PostItemTag>
       <S.PostItemInfo>
         <S.PostItemDate>
           {date} • {timeToRead} to read

@@ -63,13 +63,13 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
   body.dark {
-    --borders: #464741;
+    --borders: #2b2f31;
     --texts: #e6e6dd;
     --postColor: #e6e6dd;
     --highlight: #F8C230;
-    --sidebarBackground: #272822;
-    --menubarBackground: #272822;
-    --background: #1e1f1c;
+    --sidebarBackground: #151717;
+    --menubarBackground: #151717;
+    --background: #1d2121;
   }
   body.light {
     --borders: #F5F5F5;
