@@ -71,7 +71,17 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Go Top">
+        <S.MenuBarItem
+          title="Go Top"
+          onClick={() => {
+            document.querySelector("#___gatsby").scrollIntoView(
+              {
+                behavior: "smooth",
+              },
+              500
+            )
+          }}
+        >
           <Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
