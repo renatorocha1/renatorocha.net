@@ -16,7 +16,7 @@ const AboutPage = () => {
         <article>
           <p>
             Full stack developer with over 5 years of experience. As a
-            self-taught professional, I have commenced my career as a graphic
+            self-taught professional, I have commenced my career as a web
             designer until I discovered my passion for software developing, as
             it's a way of not only use my creativity, but also my logic focused
             mind to create new things and find solutions to improve the users
